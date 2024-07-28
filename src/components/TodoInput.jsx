@@ -3,7 +3,7 @@ import { useState } from "react"
 export default function TodoInput({buttonType,setButtonType ,todoValue,setTodoValue,handleTodoUpdate}) {
 
     return <div>
-        <audio id="mySound" src="public\255389-PA4000-Keyboard-Enter-Key-10.wav"></audio>
+        <audio id="mySound" src="/255389-PA4000-Keyboard-Enter-Key-10.wav"></audio>
           <header>
             <input onChange={(event)  => {
               const audio = document.getElementById("mySound");
