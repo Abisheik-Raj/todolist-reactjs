@@ -12,9 +12,13 @@ export default function TodoInput({buttonType,setButtonType ,todoValue,setTodoVa
         value = {todoValue}
         placeholder="Enter todo..." />
             <button onClick={() => {
-              handleTodoUpdate(todoValue);
-              setTodoValue("")
-              setButtonType("Add")
+              if(todoValue != "") {
+                handleTodoUpdate(todoValue);
+                setTodoValue("")
+                setButtonType("Add")
+              }
+
+              
             }}>{buttonType}</button>
           </header>
         </div>
